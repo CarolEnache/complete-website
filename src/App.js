@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import TextArea from './component/TextArea';
 import logo from './logo.svg';
 import './App.css';
 import { database } from './firebase';
+import Navigation from './component/navigation';
+import Header from './component/header';
+import TextArea from './component/TextArea';
 
 class App extends Component {
   state = {
@@ -33,10 +35,8 @@ class App extends Component {
     const {gigi} = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <Navigation />
+        <Header />
         <TextArea cevaDiferit="good" st={this.salveazaTextul} tav={gigi.good} />
         <TextArea cevaDiferit="header" st={this.salveazaTextul} tav={gigi.header} />
         <TextArea cevaDiferit="kiki" st={this.salveazaTextul} tav={gigi.kiki} />
