@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import  computer from '../images/computer.jpg';
 import  Wordpress from '../images/Wordpress.jpg';
 import  Using from '../images/Using.jpg';
-import './navigation.css'
+import './header.css';
 import {
     Carousel,
     CarouselItem,
@@ -15,17 +15,17 @@ const items = [
     {
         src: computer,
         altText: 'Slide 1',
-        caption: 'WEB DEVELOPMENT'
+        caption: 'Web Deveelopment'
     },
     {
         src: Using,
         altText: 'Slide 2',
-        caption: 'Slide 2'
+        caption: 'Web Design Implementation'
     },
     {
         src: Wordpress,
         altText: 'Slide 3',
-        caption: 'Slide 3'
+        caption: 'Searching Engine Optimization'
     }
 ];
 
@@ -76,7 +76,7 @@ class Header extends Component {
                     src={item.src}
                     altText={item.altText}
                 >
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                    <CarouselCaption  captionHeader={item.caption} />
                 </CarouselItem>
             );
         });

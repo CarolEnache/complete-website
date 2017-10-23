@@ -1,6 +1,7 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import * as FontAwesome from 'react-icons/lib/fa';
+import './navigation.css';
 
 export default class Navigation extends React.Component {
     constructor(props) {
@@ -25,13 +26,13 @@ export default class Navigation extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Web Desine</NavLink>
-                            </NavItem>
-                            <NavItem>
                                 <NavLink href="/">Web Development</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/">About</NavLink>
+                                <NavLink href="/">Web Design Implementation</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/">SEO</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/">Contact</NavLink>

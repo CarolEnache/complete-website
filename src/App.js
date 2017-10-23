@@ -4,7 +4,8 @@ import './App.css';
 import { database } from './firebase';
 import Navigation from './component/navigation';
 import Header from './component/header';
-import TextArea from './component/TextArea';
+import TextArea from './component/text_area';
+import About from './component/about';
 
 class App extends Component {
   state = {
@@ -37,10 +38,7 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Header />
-        <TextArea cevaDiferit="good" st={this.salveazaTextul} tav={gigi.good} />
-        <TextArea cevaDiferit="header" st={this.salveazaTextul} tav={gigi.header} />
-        <TextArea cevaDiferit="kiki" st={this.salveazaTextul} tav={gigi.kiki} />
-        <TextArea cevaDiferit="sping" st={this.salveazaTextul} tav={gigi.sping} />
+        <About />
       </div>
     );
   }
